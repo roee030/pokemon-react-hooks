@@ -8,7 +8,10 @@ function App() {
   const [pokemonId,setPokemonId] = useState()
   const [wildPokemon, setWildPokemon] = useState({});
   useEffect(()=>{
-    encounterWildPokemon()
+   
+
+      encounterWildPokemon()
+
     pokeId()
   },[pokemonId])
   const pokeId = () => {
@@ -28,10 +31,10 @@ function App() {
     <div className="app-wrapper">
      
 
-     
-        <img  src={pokedexImg} class=" outer-image " ></img>
-        <div class="inner-image">
-
+      
+        <img  src={pokedexImg} className=" outer-image " ></img>
+        <div className="inner-image">
+         
         <img  src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + wildPokemon.id + ".png"} className="sprite" />
         <button onClick={()=>pokeId()}>{wildPokemon.name}</button>
         </div>
