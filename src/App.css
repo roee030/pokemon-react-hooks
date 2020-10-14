@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+.app-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.inner-image {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  right: 40%;
+}
+.outer-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  background-size: auto;
+  height: 100vh;
+}
+@media screen and (max-width: 1500px) {
+  .inner-image {
+    right: 47%;
+  }
+}
