@@ -34,9 +34,9 @@ function App() {
       
         <img  src={pokedexImg} className=" outer-image " ></img>
         <div className="inner-image">
-         
+         <p>{wildPokemon.name}</p>
         <img  src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + wildPokemon.id + ".png"} className="sprite" />
-        <button onClick={()=>pokeId()}>{wildPokemon.name}</button>
+        <button onClick={()=>pokeId()}>Click to suffle</button>
         </div>
 
     </div>
